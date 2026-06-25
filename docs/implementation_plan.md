@@ -81,6 +81,16 @@
 - 2.1 notebook → [modules/phase_2/2.1_data_acquisition/08_data_acquisition.ipynb](../modules/phase_2/2.1_data_acquisition/08_data_acquisition.ipynb)
 - 2.2 theory → [modules/phase_2/2.2_synthetic_data/2.2_synthetic_data.md](../modules/phase_2/2.2_synthetic_data/2.2_synthetic_data.md)
 - 2.2 notebook → [modules/phase_2/2.2_synthetic_data/09_synthetic_data.ipynb](../modules/phase_2/2.2_synthetic_data/09_synthetic_data.ipynb)
+- 2.3 theory → [modules/phase_2/2.3_encoder_dataprep/2.3_encoder_dataprep.md](../modules/phase_2/2.3_encoder_dataprep/2.3_encoder_dataprep.md)
+- 2.3 notebook → [modules/phase_2/2.3_encoder_dataprep/10_encoder_dataprep.ipynb](../modules/phase_2/2.3_encoder_dataprep/10_encoder_dataprep.ipynb)
+- 2.4 theory → [modules/phase_2/2.4_encoder_finetune/2.4_encoder_finetune.md](../modules/phase_2/2.4_encoder_finetune/2.4_encoder_finetune.md)
+- 2.4 notebook → [modules/phase_2/2.4_encoder_finetune/11_encoder_finetune.ipynb](../modules/phase_2/2.4_encoder_finetune/11_encoder_finetune.ipynb)
+- 2.5 theory → [modules/phase_2/2.5_ner_extraction/2.5_ner_extraction.md](../modules/phase_2/2.5_ner_extraction/2.5_ner_extraction.md)
+- 2.5 notebook → [modules/phase_2/2.5_ner_extraction/12_ner_extraction.ipynb](../modules/phase_2/2.5_ner_extraction/12_ner_extraction.ipynb)
+- 2.6 theory → [modules/phase_2/2.6_evaluation/2.6_evaluation.md](../modules/phase_2/2.6_evaluation/2.6_evaluation.md)
+- 2.6 notebook → [modules/phase_2/2.6_evaluation/13_evaluation.ipynb](../modules/phase_2/2.6_evaluation/13_evaluation.ipynb)
+- 2.7 theory → [modules/phase_2/2.7_distillation/2.7_distillation.md](../modules/phase_2/2.7_distillation/2.7_distillation.md)
+- 2.7 notebook → [modules/phase_2/2.7_distillation/14_distillation.ipynb](../modules/phase_2/2.7_distillation/14_distillation.ipynb)
 
 **Notebooks:** `08_data_acquisition`, `09_synthetic_data_gen`, `10_encoder_dataprep`, `11_encoder_finetune`, `12_field_extraction_ner`, `13_encoder_eval`, `14_distillation`
 
