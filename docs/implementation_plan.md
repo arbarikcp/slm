@@ -50,8 +50,10 @@
 **Module files:**
 - 1.1 theory → [modules/phase_1/1.1_bigram/1.1_bigram.md](../modules/phase_1/1.1_bigram/1.1_bigram.md)
 - 1.1 notebook → [modules/phase_1/1.1_bigram/02_bigram.ipynb](../modules/phase_1/1.1_bigram/02_bigram.ipynb)
+- 1.2 theory → [modules/phase_1/1.2_self_attention/1.2_self_attention.md](../modules/phase_1/1.2_self_attention/1.2_self_attention.md)
+- 1.2 notebook → [modules/phase_1/1.2_self_attention/03_self_attention.ipynb](../modules/phase_1/1.2_self_attention/03_self_attention.ipynb)
 
-**Notebooks:** `02_bigram`, `03_nano_attention`, `04_nano_gpt_block`, `05_nano_gpt_train`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
+**Notebooks:** `02_bigram`, `03_self_attention`, `04_nano_gpt_block`, `05_nano_gpt_train`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
 
 ---
 
