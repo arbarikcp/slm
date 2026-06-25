@@ -76,7 +76,13 @@
 | 2.6 | Domain-specific evaluation | ⬜ | Eval report: confusion matrix + top-10 error patterns on gold set | ☐ | | |
 | 2.7 *(opt)* | Distillation: shrink it further | ⬜ | Distilled classifier benchmarked vs teacher on quality + latency | ☐ | | |
 
-**Notebooks:** `08_data_acquire_schema`, `09_synthetic_data_gen`, `10_encoder_dataprep`, `11_encoder_finetune`, `12_field_extraction_ner`, `13_encoder_eval`, `14_distillation`
+**Module files:**
+- 2.1 theory → [modules/phase_2/2.1_data_acquisition/2.1_data_acquisition.md](../modules/phase_2/2.1_data_acquisition/2.1_data_acquisition.md)
+- 2.1 notebook → [modules/phase_2/2.1_data_acquisition/08_data_acquisition.ipynb](../modules/phase_2/2.1_data_acquisition/08_data_acquisition.ipynb)
+- 2.2 theory → [modules/phase_2/2.2_synthetic_data/2.2_synthetic_data.md](../modules/phase_2/2.2_synthetic_data/2.2_synthetic_data.md)
+- 2.2 notebook → [modules/phase_2/2.2_synthetic_data/09_synthetic_data.ipynb](../modules/phase_2/2.2_synthetic_data/09_synthetic_data.ipynb)
+
+**Notebooks:** `08_data_acquisition`, `09_synthetic_data_gen`, `10_encoder_dataprep`, `11_encoder_finetune`, `12_field_extraction_ner`, `13_encoder_eval`, `14_distillation`
 
 **Compute:** All free (Colab/Kaggle T4). Teacher LLM for Module 2.2: ~$1–2 via API, or free via local Ollama.
 
