@@ -19,12 +19,17 @@
 
 | # | Module | Status | Deliverable | Checkpoint passed? | Date | Notes |
 |---|---|---|---|---|---|---|
-| 0.1 | What an SLM is, and when small wins | ⬜ | One-page decision memo: why DeskMate uses SLMs | ☐ | | |
+| 0.1 | What an SLM is, and when small wins | ⬜ | `decision_memo.md` | ☐ | | |
 | 0.2 | Environment, repo, free-tier compute | ⬜ | Repo skeleton + W&B + HF Hub checkpoint | ☐ | | |
 | 0.3 | The Transformer — conceptual preview pass | ⬜ | Annotated diagrams + glossary (6 terms) | ☐ | | |
 | 0.4 | Tokenization deep dive | ⬜ | Trained domain BPE tokenizer + token-count comparison notebook | ☐ | | |
 
-**Notebook:** `00_env_setup_hello_gpu`, `01_tokenizer_train`
+**Module files:**
+- 0.1 → [modules/phase_0/0.1_what_is_slm/0.1_what_is_slm.md](../modules/phase_0/0.1_what_is_slm/0.1_what_is_slm.md)
+- 0.1 deliverable → [modules/phase_0/0.1_what_is_slm/decision_memo.md](../modules/phase_0/0.1_what_is_slm/decision_memo.md)
+- 0.2 → modules/phase_0/0.2_environment/ *(created when we start)*
+- 0.3 → modules/phase_0/0.3_transformer_conceptual/ *(created when we start)*
+- 0.4 → modules/phase_0/0.4_tokenization/ *(created when we start)*
 
 ---
 
