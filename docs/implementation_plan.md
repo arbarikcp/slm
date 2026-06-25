@@ -30,7 +30,8 @@
 - 0.2 theory → [modules/phase_0/0.2_environment/0.2_environment.md](../modules/phase_0/0.2_environment/0.2_environment.md)
 - 0.2 notebook → [modules/phase_0/0.2_environment/00_hello_gpu.ipynb](../modules/phase_0/0.2_environment/00_hello_gpu.ipynb)
 - 0.3 theory → [modules/phase_0/0.3_transformer_conceptual/0.3_transformer_conceptual.md](../modules/phase_0/0.3_transformer_conceptual/0.3_transformer_conceptual.md)
-- 0.4 → modules/phase_0/0.4_tokenization/ *(created when we start)*
+- 0.4 theory → [modules/phase_0/0.4_tokenization/0.4_tokenization.md](../modules/phase_0/0.4_tokenization/0.4_tokenization.md)
+- 0.4 notebook → [modules/phase_0/0.4_tokenization/01_tokenization.ipynb](../modules/phase_0/0.4_tokenization/01_tokenization.ipynb)
 
 ---
 
