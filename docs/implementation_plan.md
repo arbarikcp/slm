@@ -58,6 +58,7 @@
 - 1.4 notebook → [modules/phase_1/1.4_nano_slm/05_nano_slm.ipynb](../modules/phase_1/1.4_nano_slm/05_nano_slm.ipynb)
 - 1.5 theory → [modules/phase_1/1.5_scaling_pretrained/1.5_scaling_pretrained.md](../modules/phase_1/1.5_scaling_pretrained/1.5_scaling_pretrained.md)
 - 1.6 theory → [modules/phase_1/1.6_modern_arch_variants/1.6_modern_arch_variants.md](../modules/phase_1/1.6_modern_arch_variants/1.6_modern_arch_variants.md)
+- 1.7 theory → [modules/phase_1/1.7_bridge_dapt/1.7_bridge_dapt.md](../modules/phase_1/1.7_bridge_dapt/1.7_bridge_dapt.md)
 
 **Notebooks:** `02_bigram`, `03_self_attention`, `04_block`, `05_nano_slm`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
 
