@@ -47,7 +47,11 @@
 | 1.6 | Modern architecture variants *(new)* | ⬜ | nano-GPT vs modern SLM comparison table (RoPE, GQA, SwiGLU, Flash Attention) | ☐ | | |
 | 1.7 | Bridge: nano-GPT → pretrained bases; DAPT intro *(new)* | ⬜ | DAPT decision note | ☐ | | |
 
-**Notebooks:** `02_nano_bigram`, `03_nano_attention`, `04_nano_gpt_block`, `05_nano_gpt_train`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
+**Module files:**
+- 1.1 theory → [modules/phase_1/1.1_bigram/1.1_bigram.md](../modules/phase_1/1.1_bigram/1.1_bigram.md)
+- 1.1 notebook → [modules/phase_1/1.1_bigram/02_bigram.ipynb](../modules/phase_1/1.1_bigram/02_bigram.ipynb)
+
+**Notebooks:** `02_bigram`, `03_nano_attention`, `04_nano_gpt_block`, `05_nano_gpt_train`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
 
 ---
 
