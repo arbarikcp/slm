@@ -115,6 +115,25 @@
 
 **Notebooks:** `15_prompting_baseline`, `16_base_model_selection`, `17_dapt_run`, `18_sft_dataset`, `19_constrained_decoding`, `20_lora_qlora_theory`, `21_qlora_finetune`, `22_bigger_vs_smaller`, `23_gen_eval_harness`, `24_dpo_tuning`
 
+**Module files:**
+- 3.0 theory → [modules/phase_3/3.0_prompting_baselines/3.0_prompting_baselines.md](../modules/phase_3/3.0_prompting_baselines/3.0_prompting_baselines.md)
+- 3.0 notebook → [modules/phase_3/3.0_prompting_baselines/15_prompting_baselines.ipynb](../modules/phase_3/3.0_prompting_baselines/15_prompting_baselines.ipynb)
+- 3.1 theory → [modules/phase_3/3.1_base_model_selection/3.1_base_model_selection.md](../modules/phase_3/3.1_base_model_selection/3.1_base_model_selection.md)
+- 3.1a theory → [modules/phase_3/3.1a_dapt/3.1a_dapt.md](../modules/phase_3/3.1a_dapt/3.1a_dapt.md) *(optional — deferred; see TODO in file)*
+- 3.2 theory → [modules/phase_3/3.2_sft_dataprep/3.2_sft_dataprep.md](../modules/phase_3/3.2_sft_dataprep/3.2_sft_dataprep.md)
+- 3.2 notebook → [modules/phase_3/3.2_sft_dataprep/16_sft_dataprep.ipynb](../modules/phase_3/3.2_sft_dataprep/16_sft_dataprep.ipynb)
+- 3.2a theory → [modules/phase_3/3.2a_constrained_decoding/3.2a_constrained_decoding.md](../modules/phase_3/3.2a_constrained_decoding/3.2a_constrained_decoding.md)
+- 3.2a notebook → [modules/phase_3/3.2a_constrained_decoding/17_constrained_decoding.ipynb](../modules/phase_3/3.2a_constrained_decoding/17_constrained_decoding.ipynb)
+- 3.3 theory → [modules/phase_3/3.3_lora_qlora/3.3_lora_qlora.md](../modules/phase_3/3.3_lora_qlora/3.3_lora_qlora.md)
+- 3.4 theory → [modules/phase_3/3.4_qlora_finetune/3.4_qlora_finetune.md](../modules/phase_3/3.4_qlora_finetune/3.4_qlora_finetune.md)
+- 3.4 notebook → [modules/phase_3/3.4_qlora_finetune/18_qlora_finetune.ipynb](../modules/phase_3/3.4_qlora_finetune/18_qlora_finetune.ipynb)
+- 3.5 theory → [modules/phase_3/3.5_bigger_vs_smaller/3.5_bigger_vs_smaller.md](../modules/phase_3/3.5_bigger_vs_smaller/3.5_bigger_vs_smaller.md)
+- 3.5 notebook → [modules/phase_3/3.5_bigger_vs_smaller/19_bigger_vs_smaller.ipynb](../modules/phase_3/3.5_bigger_vs_smaller/19_bigger_vs_smaller.ipynb)
+- 3.6 theory → [modules/phase_3/3.6_gen_eval/3.6_gen_eval.md](../modules/phase_3/3.6_gen_eval/3.6_gen_eval.md)
+- 3.6 notebook → [modules/phase_3/3.6_gen_eval/20_gen_eval_harness.ipynb](../modules/phase_3/3.6_gen_eval/20_gen_eval_harness.ipynb)
+- 3.7 theory → [modules/phase_3/3.7_dpo/3.7_dpo.md](../modules/phase_3/3.7_dpo/3.7_dpo.md) *(optional — run only if 3.6 shows tone/safety issues)*
+- 3.7 notebook → [modules/phase_3/3.7_dpo/21_dpo_tuning.ipynb](../modules/phase_3/3.7_dpo/21_dpo_tuning.ipynb)
+
 **Compute:** Modules 3.0–3.2a on free tier. Module 3.4: smoke-test free, full run ~1–2 hrs on rented A100 (~$2–4). Module 3.5: ~3 hrs on A100 (~$3–6).
 
 ---
