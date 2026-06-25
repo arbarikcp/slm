@@ -1,1 +1,14 @@
 .idea
+.env
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+models/
+data/raw/
+data/processed/
+*.gguf
+*.bin
+*.safetensors
+wandb/
+.ipynb_checkpoints/

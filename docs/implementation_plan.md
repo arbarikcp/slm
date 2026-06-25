@@ -27,7 +27,8 @@
 **Module files:**
 - 0.1 → [modules/phase_0/0.1_what_is_slm/0.1_what_is_slm.md](../modules/phase_0/0.1_what_is_slm/0.1_what_is_slm.md)
 - 0.1 deliverable → [modules/phase_0/0.1_what_is_slm/decision_memo.md](../modules/phase_0/0.1_what_is_slm/decision_memo.md)
-- 0.2 → modules/phase_0/0.2_environment/ *(created when we start)*
+- 0.2 theory → [modules/phase_0/0.2_environment/0.2_environment.md](../modules/phase_0/0.2_environment/0.2_environment.md)
+- 0.2 notebook → [modules/phase_0/0.2_environment/00_hello_gpu.ipynb](../modules/phase_0/0.2_environment/00_hello_gpu.ipynb)
 - 0.3 → modules/phase_0/0.3_transformer_conceptual/ *(created when we start)*
 - 0.4 → modules/phase_0/0.4_tokenization/ *(created when we start)*
 
