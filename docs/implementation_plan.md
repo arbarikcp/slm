@@ -148,7 +148,18 @@
 | 4.4 | Wire RAG to the decoder + evaluate grounding | ⬜ | End-to-end grounded answers with citations + faithfulness scorecard | ☐ | | |
 | 4.5 *(opt)* | GraphRAG | ⬜ | GraphRAG experiment vs baseline | ☐ | | |
 
-**Notebooks:** `25_rag_index`, `26_rag_retriever`, `27_rag_answer_eval`, `28_graphrag`
+**Notebooks:** `22_rag_chunking_embeddings`, `23_rag_retriever`, `24_rag_answer_eval`, `25_graphrag`
+
+**Module files:**
+- 4.1 theory → [modules/phase_4/4.1_rag_vs_finetune/4.1_rag_vs_finetune.md](../modules/phase_4/4.1_rag_vs_finetune/4.1_rag_vs_finetune.md)
+- 4.1 deliverable → [modules/phase_4/4.1_rag_vs_finetune/decision_note_rag_vs_finetune.md](../modules/phase_4/4.1_rag_vs_finetune/decision_note_rag_vs_finetune.md)
+- 4.2 theory → [modules/phase_4/4.2_chunking_embeddings/4.2_chunking_embeddings.md](../modules/phase_4/4.2_chunking_embeddings/4.2_chunking_embeddings.md)
+- 4.2 notebook → [modules/phase_4/4.2_chunking_embeddings/22_rag_chunking_embeddings.ipynb](../modules/phase_4/4.2_chunking_embeddings/22_rag_chunking_embeddings.ipynb)
+- 4.3 theory → [modules/phase_4/4.3_retrieval/4.3_retrieval.md](../modules/phase_4/4.3_retrieval/4.3_retrieval.md)
+- 4.3 notebook → [modules/phase_4/4.3_retrieval/23_rag_retriever.ipynb](../modules/phase_4/4.3_retrieval/23_rag_retriever.ipynb)
+- 4.4 theory → [modules/phase_4/4.4_rag_decoder/4.4_rag_decoder.md](../modules/phase_4/4.4_rag_decoder/4.4_rag_decoder.md)
+- 4.4 notebook → [modules/phase_4/4.4_rag_decoder/24_rag_answer_eval.ipynb](../modules/phase_4/4.4_rag_decoder/24_rag_answer_eval.ipynb)
+- 4.5 theory → [modules/phase_4/4.5_graphrag/4.5_graphrag.md](../modules/phase_4/4.5_graphrag/4.5_graphrag.md) *(optional — revisit if multi-hop HR@3 < 0.70)*
 
 **Compute:** All free (CPU for indexing; T4 for embedding if needed).
 
