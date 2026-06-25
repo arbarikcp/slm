@@ -52,8 +52,10 @@
 - 1.1 notebook → [modules/phase_1/1.1_bigram/02_bigram.ipynb](../modules/phase_1/1.1_bigram/02_bigram.ipynb)
 - 1.2 theory → [modules/phase_1/1.2_self_attention/1.2_self_attention.md](../modules/phase_1/1.2_self_attention/1.2_self_attention.md)
 - 1.2 notebook → [modules/phase_1/1.2_self_attention/03_self_attention.ipynb](../modules/phase_1/1.2_self_attention/03_self_attention.ipynb)
+- 1.3 theory → [modules/phase_1/1.3_multihead_block/1.3_multihead_block.md](../modules/phase_1/1.3_multihead_block/1.3_multihead_block.md)
+- 1.3 notebook → [modules/phase_1/1.3_multihead_block/04_block.ipynb](../modules/phase_1/1.3_multihead_block/04_block.ipynb)
 
-**Notebooks:** `02_bigram`, `03_self_attention`, `04_nano_gpt_block`, `05_nano_gpt_train`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
+**Notebooks:** `02_bigram`, `03_self_attention`, `04_block`, `05_nano_gpt_train`, `06_modern_arch_variants`, `07_bridge_dapt_intro`
 
 ---
 
