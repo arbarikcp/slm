@@ -225,12 +225,12 @@
 
 | # | Module | Status | Deliverable | Checkpoint passed? | Date | Notes |
 |---|---|---|---|---|---|---|
-| 7.1 | System architecture & orchestration | ⬜ | Integrated DeskMate service (triage → route → retrieve → generate → guardrails) | ☐ | | |
-| 7.2 | Make it an agent | ⬜ | DeskMate with 1–2 real tools (e.g. order lookup, ticket escalation) | ☐ | | |
-| 7.3 | Memory: short- and long-term | ⬜ | Multi-turn DeskMate with conversation + persistent memory | ☐ | | |
-| 7.4 | Monitoring, eval-in-prod, drift detection | ⬜ | Monitoring + feedback loop design + basic dashboards | ☐ | | |
-| 7.5 *(opt)* | Test-time compute | ⬜ | DeskMate with test-time compute on hard tickets: quality/latency trade | ☐ | | |
-| 7.6 | CI/CD for the model lifecycle *(new)* | ⬜ | CI/CD pipeline: drift trigger → fine-tune → eval gate → promote or reject | ☐ | | |
+| 7.1 | System architecture & orchestration | ✅ | Integrated DeskMate service (triage → route → retrieve → generate → guardrails) | ✅ Short-circuit after encoder if confidence < 0.70; eliminates retriever + LLM call for ambiguous tickets | 2026-06-26 | [7.1_orchestration.md](../modules/phase_7/7.1_orchestration/7.1_orchestration.md) · [39_orchestration.ipynb](../modules/phase_7/7.1_orchestration/39_orchestration.ipynb) |
+| 7.2 | Make it an agent | ✅ | DeskMate with 1–2 real tools (lookup_order, file_bug, escalate_to_human); loop guard MAX_TURNS=5 + context-limit guard | ✅ Turn counter (MAX_TURNS) stops infinite loops; fires escalation not fabricated reply | 2026-06-26 | [7.2_agent.md](../modules/phase_7/7.2_agent/7.2_agent.md) · [40_deskmate_agent.ipynb](../modules/phase_7/7.2_agent/40_deskmate_agent.ipynb) |
+| 7.3 | Memory: short- and long-term | ✅ | Multi-turn DeskMate with ConversationMemory (sliding window + summarise-and-replace) + CustomerProfile long-term store | ✅ Sliding window + summarise-and-replace + proactive token budgeting; invariant: prompt fits context window before each call | 2026-06-26 | [7.3_memory.md](../modules/phase_7/7.3_memory/7.3_memory.md) · [41_memory.ipynb](../modules/phase_7/7.3_memory/41_memory.ipynb) |
+| 7.4 | Monitoring, eval-in-prod, drift detection | ✅ | Structured logging, online metrics, KL divergence + CUSUM drift detection, two-signal retrain trigger, 4-panel dashboard, CI gate | ✅ Two-signal retrain trigger: any 2 of {confidence<0.72, esc_rate>25%, KL>0.25, CUSUM alarm} for 24h | 2026-06-26 | [7.4_monitoring.md](../modules/phase_7/7.4_monitoring/7.4_monitoring.md) · [42_monitoring.ipynb](../modules/phase_7/7.4_monitoring/42_monitoring.ipynb) |
+| 7.5 *(opt)* | Test-time compute | ✅ | Best-of-N, self-consistency, iterative refinement; TTC router for high-urgency/enterprise; quality/latency scatter chart | ✅ Pay more compute when: reliable verifier exists + N×latency < SLA + ticket is hard (delta ≥ 0.03 ROUGE-L) | 2026-06-26 | [7.5_test_time_compute.md](../modules/phase_7/7.5_test_time_compute/7.5_test_time_compute.md) · [43_test_time_compute.ipynb](../modules/phase_7/7.5_test_time_compute/43_test_time_compute.ipynb) |
+| 7.6 | CI/CD for the model lifecycle *(new)* | ✅ | Full pipeline: trigger → QLoRA fine-tune → 4-check eval gate (incl. per-category F1) → canary 5% → rollback or promote; GitHub Actions YAML written | ✅ Gold set blind spot = live distribution gap; canary closes it with 24h real traffic before full rollout | 2026-06-26 | [7.6_cicd.md](../modules/phase_7/7.6_cicd/7.6_cicd.md) · [44_cicd.ipynb](../modules/phase_7/7.6_cicd/44_cicd.ipynb) |
 
 **Notebooks:** `39_deskmate_orchestrator`, `40_deskmate_agent_memory`, `41_monitoring_drift`, `42_test_time_compute`, `43_cicd_model_lifecycle`
 
@@ -272,7 +272,7 @@ Phase 3  [⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 0 / 10 modules (2 optional)
 Phase 4  [⬜⬜⬜⬜⬜]          0 / 5  modules (1 optional)
 Phase 5  [⬜⬜⬜⬜⬜⬜⬜⬜]    0 / 8  modules (1 optional)
 Phase 6  [⬜⬜⬜⬜⬜]          0 / 5  modules
-Phase 7  [⬜⬜⬜⬜⬜⬜]        0 / 6  modules (1 optional)
+Phase 7  [✅✅✅✅✅✅]        6 / 6  modules (1 optional) ✅ COMPLETE
 Phase 8  [⬜]                 0 / 1  modules
 Phase 9  [⬜⬜⬜⬜⬜⬜⬜]     0 / 7  modules
 ─────────────────────────────────────────────
