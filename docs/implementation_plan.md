@@ -169,16 +169,30 @@
 
 | # | Module | Status | Deliverable | Checkpoint passed? | Date | Notes |
 |---|---|---|---|---|---|---|
-| 5.1 | Precision formats (fp32/fp16/bf16/int8/int4) | ⬜ | Memory estimates notebook | ☐ | | |
-| 5.2 | 8-bit quantization | ⬜ | 8-bit DeskMate benchmarked vs fp16 | ☐ | | |
-| 5.3 | 4-bit quantization: GPTQ, AWQ, GGUF | ⬜ | GPTQ/AWQ build + GGUF export, each benchmarked | ☐ | | |
-| 5.4 | ONNX export & runtime | ⬜ | Encoder + decoder exported to ONNX, benchmarked vs PyTorch | ☐ | | |
-| 5.5 | Profiling & graph optimization | ⬜ | Flame view + before/after latency improvement | ☐ | | |
-| 5.6 | Advanced quantization (read-level) | ⬜ | SmoothQuant / FlexGen / BitNet — one-sentence summary each | ☐ | | |
-| 5.7 | Speculative decoding *(new)* | ⬜ | Speculative decoding benchmark: tokens/sec, acceptance rate, output quality | ☐ | | |
-| 5.8 *(opt)* | Model merging: SLERP & DARE-TIES | ⬜ | Merged SFT+DPO model benchmarked vs each parent | ☐ | | |
+| 5.1 | Precision formats (fp32/fp16/bf16/int8/int4) | ✅ | Theory `.md` — memory formula, format table, quantisation trade-offs | ✅ | 2026-06-26 | Theory-only; checkpoint: 3B fp16=6 GB, int4=1.5 GB |
+| 5.2 | 8-bit quantization | ✅ | Theory `.md` + `30_quantize_8bit.ipynb` — VRAM/throughput/ROUGE-L | ✅ | 2026-06-26 | LLM.int8() outlier handling; quality gate delta ≤ 0.01 |
+| 5.3 | 4-bit quantization: GPTQ, AWQ, GGUF | ✅ | Theory `.md` + `31_quantize_4bit_gguf.ipynb` — GPTQ/AWQ/GGUF benchmarked | ✅ | 2026-06-26 | Checkpoint: GPTQ=GPU serving, GGUF=CPU/local |
+| 5.4 | ONNX export & runtime | ✅ | Theory `.md` + `32_onnx_export.ipynb` — encoder/decoder ONNX, I/O binding benchmark | ✅ | 2026-06-26 | Checkpoint: I/O binding removes CPU↔GPU copies from hot path |
+| 5.5 | Profiling & graph optimization | ✅ | Theory `.md` + `33_onnx_profile.ipynb` — Chrome trace, op ranking, fusion + thread fix | ✅ | 2026-06-26 | Checkpoint: MatMul ~54% of time; ORT optimizer + thread tuning |
+| 5.6 | Advanced quantization (read-level) | ✅ | Theory `.md` — SmoothQuant / FlexGen / BitNet; one-sentence summaries | ✅ | 2026-06-26 | Read-level; no notebook |
+| 5.7 | Speculative decoding *(new)* | ✅ | Theory `.md` + `35_speculative_decoding.ipynb` — speedup, α, γ sweep, identity gate | ✅ | 2026-06-26 | Checkpoint: rejection sampling guarantees marginal p on every token |
+| 5.8 *(opt)* | Model merging: SLERP & DARE-TIES | ✅ | Theory `.md` + `36_model_merging.ipynb` — linear/SLERP/DARE-TIES vs parents | ✅ | 2026-06-26 | Optional; checkpoint: ROUGE-L < both parents = interference → increase DARE sparsity |
 
-**Notebooks:** `29_precision_formats`, `30_quantize_8bit`, `31_quantize_4bit_gguf`, `32_onnx_export`, `33_onnx_profile`, `34_advanced_quant`, `35_speculative_decoding`, `36_model_merging`
+**Module files:**
+- 5.1 theory → [modules/phase_5/5.1_precision_formats/5.1_precision_formats.md](../modules/phase_5/5.1_precision_formats/5.1_precision_formats.md)
+- 5.2 theory → [modules/phase_5/5.2_quantize_8bit/5.2_quantize_8bit.md](../modules/phase_5/5.2_quantize_8bit/5.2_quantize_8bit.md)
+- 5.2 notebook → [modules/phase_5/5.2_quantize_8bit/30_quantize_8bit.ipynb](../modules/phase_5/5.2_quantize_8bit/30_quantize_8bit.ipynb)
+- 5.3 theory → [modules/phase_5/5.3_quantize_4bit_gguf/5.3_quantize_4bit_gguf.md](../modules/phase_5/5.3_quantize_4bit_gguf/5.3_quantize_4bit_gguf.md)
+- 5.3 notebook → [modules/phase_5/5.3_quantize_4bit_gguf/31_quantize_4bit_gguf.ipynb](../modules/phase_5/5.3_quantize_4bit_gguf/31_quantize_4bit_gguf.ipynb)
+- 5.4 theory → [modules/phase_5/5.4_onnx_export/5.4_onnx_export.md](../modules/phase_5/5.4_onnx_export/5.4_onnx_export.md)
+- 5.4 notebook → [modules/phase_5/5.4_onnx_export/32_onnx_export.ipynb](../modules/phase_5/5.4_onnx_export/32_onnx_export.ipynb)
+- 5.5 theory → [modules/phase_5/5.5_profiling/5.5_profiling.md](../modules/phase_5/5.5_profiling/5.5_profiling.md)
+- 5.5 notebook → [modules/phase_5/5.5_profiling/33_onnx_profile.ipynb](../modules/phase_5/5.5_profiling/33_onnx_profile.ipynb)
+- 5.6 theory → [modules/phase_5/5.6_advanced_quant/5.6_advanced_quant.md](../modules/phase_5/5.6_advanced_quant/5.6_advanced_quant.md)
+- 5.7 theory → [modules/phase_5/5.7_speculative_decoding/5.7_speculative_decoding.md](../modules/phase_5/5.7_speculative_decoding/5.7_speculative_decoding.md)
+- 5.7 notebook → [modules/phase_5/5.7_speculative_decoding/35_speculative_decoding.ipynb](../modules/phase_5/5.7_speculative_decoding/35_speculative_decoding.ipynb)
+- 5.8 theory → [modules/phase_5/5.8_model_merging/5.8_model_merging.md](../modules/phase_5/5.8_model_merging/5.8_model_merging.md)
+- 5.8 notebook → [modules/phase_5/5.8_model_merging/36_model_merging.ipynb](../modules/phase_5/5.8_model_merging/36_model_merging.ipynb)
 
 **Compute:** All free (CPU + T4).
 
