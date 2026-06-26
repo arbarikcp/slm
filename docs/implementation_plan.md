@@ -202,13 +202,20 @@
 
 | # | Module | Status | Deliverable | Checkpoint passed? | Date | Notes |
 |---|---|---|---|---|---|---|
-| 6.1 | Inference economics: cost, batching, throughput | ⬜ | Cost analysis notebook | ☐ | | |
-| 6.2 | Serving with vLLM | ⬜ | DeskMate served via vLLM, load-tested | ☐ | | |
-| 6.3 | FastAPI service + benchmarking | ⬜ | `/triage` + `/answer` API with latency benchmarks | ☐ | | |
-| 6.4 | Local deployment: Ollama, llama.cpp | ⬜ | DeskMate running locally via Ollama from your GGUF | ☐ | | |
-| 6.5 | On-device / mobile (overview) | ⬜ | Conceptual notes + MLC LLM demo | ☐ | | |
+| 6.1 | Inference economics: cost, batching, throughput | ✅ | Theory `.md` — cost formula, batching, KV cache, throughput/latency trade-off | ✅ | 2026-06-26 | Checkpoint: batching raises throughput but increases p99 (head-of-line blocking) |
+| 6.2 | Serving with vLLM | ✅ | Theory `.md` — paged attention, continuous batching, OpenAI API | ✅ | 2026-06-26 | Checkpoint: paged attention drops KV cache waste from 30-60% to <4% |
+| 6.3 | FastAPI service + benchmarking | ✅ | Theory `.md` + `37_serve_vllm_fastapi.ipynb` — /triage + /answer, concurrency benchmark | ✅ | 2026-06-26 | Checkpoint: encoder→retriever→decoder order; decoder via vLLM |
+| 6.4 | Local deployment: Ollama, llama.cpp | ✅ | Theory `.md` + `38_local_ollama.ipynb` — Modelfile, full local pipeline | ✅ | 2026-06-26 | Checkpoint: local = privacy + compliance + offline availability |
+| 6.5 | On-device / mobile (overview) | ✅ | Theory `.md` — MLC LLM, Android, mobile constraints | ✅ | 2026-06-26 | Checkpoint: 5 changes (shared RAM, throttling, battery, diversity, update path) |
 
-**Notebooks:** `37_serve_vllm_fastapi`, `38_local_ollama`
+**Module files:**
+- 6.1 theory → [modules/phase_6/6.1_inference_economics/6.1_inference_economics.md](../modules/phase_6/6.1_inference_economics/6.1_inference_economics.md)
+- 6.2 theory → [modules/phase_6/6.2_vllm/6.2_vllm.md](../modules/phase_6/6.2_vllm/6.2_vllm.md)
+- 6.3 theory → [modules/phase_6/6.3_fastapi/6.3_fastapi.md](../modules/phase_6/6.3_fastapi/6.3_fastapi.md)
+- 6.3 notebook → [modules/phase_6/6.3_fastapi/37_serve_vllm_fastapi.ipynb](../modules/phase_6/6.3_fastapi/37_serve_vllm_fastapi.ipynb)
+- 6.4 theory → [modules/phase_6/6.4_ollama/6.4_ollama.md](../modules/phase_6/6.4_ollama/6.4_ollama.md)
+- 6.4 notebook → [modules/phase_6/6.4_ollama/38_local_ollama.ipynb](../modules/phase_6/6.4_ollama/38_local_ollama.ipynb)
+- 6.5 theory → [modules/phase_6/6.5_on_device/6.5_on_device.md](../modules/phase_6/6.5_on_device/6.5_on_device.md)
 
 **Compute:** Free (CPU for FastAPI/Ollama; T4 for vLLM load test).
 
